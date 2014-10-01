@@ -1,0 +1,49 @@
+/*******************************************************************************
+ * push-menu.layout.scss
+ *
+ * Styling specific to the Push Menu layout.
+ ******************************************************************************/
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "../../variables/grid";
+
+@import "../../abstractions/mixins";
+@import "push-menu";
+// Define Singularity grid variables smallest format first.
+@include breakpoint($extra-small) {
+  .l-header,
+  .l-main,
+  .l-footer {
+    @include add-grid(1);
+    @include grid-span(1, 1);
+  }
+  .l-region--navigation {
+    clear: both;
+  }
+  .has-sidebar-first,
+  .has-sidebar-second,
+  .has-two-sidebars {
+    .l-content {
+    }
+    .l-region--sidebar-first,
+    .l-region--sidebar-second {
+    }
+    .l-region--sidebar-second {
+      clear: right;
+    }
+  }
+}
+
+@include breakpoint($small) {
+  width: $small-max;
+}
+@include breakpoint($medium) {
+  width: $medium-max;
+}
+@include breakpoint($large) {
+  width: $large-max;
+}
+@include breakpoint($extra-large) {
+  width: $extra-large;
+}

@@ -1,0 +1,38 @@
+// turn on singularity debug so the grid can be displayed
+@include sgs-change('debug', true);
+article.node--page {
+  @include background-grid($color:red);
+  @include clearfix;
+}
+
+#page, .l-page {
+  margin: 0 auto;
+  @include breakpoint($medium, true) {
+    width: $medium-min;
+  }
+  @include breakpoint($large, true) {
+    width: $large-min;
+  }
+}
+body {
+  color: black;
+  font-family: $default-font-family;
+  font-weight: 300;
+  @include pix-to-rem(font-size, 18px);
+}
+@include breakpoint($medium, true) {
+  .l-region--sidebar-first {
+    @include grid-span(3, 10);
+  }
+  .node__content {
+    @include grid-span(9, 1);
+  }
+}
+@include breakpoint($large, true) {
+  .l-region--sidebar-first {
+    @include grid-span(3, 1);
+  }
+  .node__content {
+    @include grid-span(9, 4);
+  }
+}

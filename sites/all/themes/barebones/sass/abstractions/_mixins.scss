@@ -1,0 +1,69 @@
+@import "../variables/typography";
+
+@function parseInt($n) {
+  @return $n / ($n * 0 + 1);
+}
+// REMs with pixel fallback for font sizing
+@mixin font-size($font-size) {
+  font-size: $font-size;
+  font-size:($font-size / $font-size-override) * 1rem;
+}
+// REMS with pixel fallback for any given CSS property.
+// Usage:
+// $font-size-override: 16px; // set in _typography variables scss file
+//
+// body {
+//    @include pix-to-rem(font-size, 1rem);
+//    @include pix-to-rem(padding, 20px 10px);
+// }
+// Output:
+// body {
+//   font-size: 16px;     /* Fallback to pixels */
+//   font-size: 1rem;
+//   padding: 20px 10px;  /* Fallback for pixels */
+//   padding: 1.25rem 0.625rem;
+//
+@mixin pix-to-rem($property, $values) {
+  $px : ();
+  $rem: ();
+  $basefont: parseInt($font-size-override);
+
+  @each $value in $values {
+
+    @if $value == 0 or $value == auto {
+      $px : append($px , $value);
+      $rem: append($rem, $value);
+    }
+
+    @else {
+      $unit: unit($value);
+      $val: parseInt($value);
+
+      @if $unit == "px" {
+        $px : append($px,  $value);
+        $rem: append($rem, ($val / $basefont + rem));
+      }
+
+      @if $unit == "rem" {
+        $px : append($px,  ($val * $basefont + px));
+        $rem: append($rem, $value);
+      }
+    }
+  }
+
+  @if $px == $rem {
+    #{$property}: $px;
+  } @else {
+    #{$property}: $px;
+    #{$property}: $rem;
+  }
+}
+// Transitions can make code quite bloated which can hurt the readability. This
+// can be solved by using a mixin for it. Thanks to http://www.zerosixthree.se
+@mixin transition($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}

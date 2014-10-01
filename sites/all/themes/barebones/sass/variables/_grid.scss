@@ -1,0 +1,30 @@
+/*******************************************************************************
+ * Singularity Grid Definitions which applicable to most, if not all, themes,
+ * layouts and forms used by Dynamic Domain Designs.
+ ******************************************************************************/
+@import "singularitygs";
+@import "breakpoint";
+// set the defintions used by breakpoint and other viewport size specific or
+// responsive characteristics. These default sizes are taken from the bootstrap
+// framework documentation as of 2014-September.
+$extra-small-min: 0;
+$extra-small-max: 767px;
+$small-min: 768px;
+$small-max: 991px;
+$medium-min: 992px;
+$medium-max: 1200px;
+$large-min: 1201px;
+$large-max: 1900px;
+$extra-large-min: 1901px;
+// combined for the breakpoint mixin
+$extra-small: $extra-small-min $extra-small-max;
+$small: $small-min $small-max;
+$medium: $medium-min $medium-max;
+$large: $large-min $large-max;
+$extra-large: $extra-large-min;
+// Set consistent vertical and horizontal spacing units.
+$vert-spacing-unit: 20px;
+$horz-spacing-unit: 1em;
+
+@include add-grid(12);
+@include add-gutter(1/3);
