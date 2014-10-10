@@ -17,7 +17,6 @@ stylesheets[all][] = css/barebones.no-query.css
 ; Scripts
 ; ========================================
 scripts[] = js/barebones.behaviors.js
-
 ; ========================================
 ; Regions
 ; ========================================
@@ -30,3 +29,19 @@ regions[content] = Content
 regions[sidebar_first] = First Sidebar
 regions[sidebar_second] = Second Sidebar
 regions[footer] = Footer
+; ==========================================================
+; Breakpoints for the Picture and Breakpoints Modules
+; ==========================================================
+; Pictures 2.0 requires the breakpoints be set from the
+; "largest" (e.g. wide) to the "smallest" (e.g. mobile)
+;
+; Extra large devices
+breakpoints[screen-XL] = (min-width: 1900px)
+; Large devices (desktops and large monitors 1200 and up)
+breakpoints[screen-LD] = (min-width: 1200px)
+; Medium devices (desktops 992 and up)
+breakpoints[screen-MD] = (min-width: 992px)
+; Small devicess (generally tablets)
+breakpoints[screen-SM] = (min-width: 44em)
+; Extra small devices (phones and others under 704px or 44em)
+breakpoints[screen-XS] = (min-width: 0px)

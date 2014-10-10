@@ -3,8 +3,16 @@
  * layouts and forms used by Dynamic Domain Designs.
  ******************************************************************************/
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-/* line 3, ../sass/base/_fonts.scss */
-.fa:before {
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,200,300);
+@font-face {
+  font-family: 'linecons';
+  src: url("../fonts/linecons/linecons.eot");
+  src: url("../fonts/linecons/linecons.eot?#iefix") format("embedded-opentype"), url("../fonts/linecons/linecons.woff") format("woff"), url("../fonts/linecons/linecons.ttf") format("truetype"), url("../fonts/linecons/linecons.svg#linecons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* line 13, ../sass/base/_fonts.scss */
+.icon:before {
+  font-family: 'linecons';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -101,255 +109,241 @@ img, media {
 #mp-menu a:hover {
   color: yellow; }
 
-@font-face {
-  font-family: 'linecons';
-  src: url("../fonts/linecons/linecons.eot");
-  src: url("../fonts/linecons/linecons.eot?#iefix") format("embedded-opentype"), url("../fonts/linecons/linecons.woff") format("woff"), url("../fonts/linecons/linecons.ttf") format("truetype"), url("../fonts/linecons/linecons.svg#linecons") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-/* line 12, ../sass/base/icons/_linecons.scss */
-.icon:before {
-  font-family: 'linecons';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  display: inline-block;
-  margin-right: 0.6em;
-  -webkit-font-smoothing: antialiased; }
-
-/* line 24, ../sass/base/icons/_linecons.scss */
+/* line 1, ../sass/base/icons/_linecons.scss */
 .icon-female:before {
   content: "\f182"; }
 
-/* line 25, ../sass/base/icons/_linecons.scss */
+/* line 2, ../sass/base/icons/_linecons.scss */
 .icon-male:before {
   content: "\f183"; }
 
-/* line 26, ../sass/base/icons/_linecons.scss */
+/* line 3, ../sass/base/icons/_linecons.scss */
 .icon-arrow-left:before {
   content: "\e032"; }
 
-/* line 27, ../sass/base/icons/_linecons.scss */
+/* line 4, ../sass/base/icons/_linecons.scss */
 .icon-arrow-left-2:before {
   content: "\e034"; }
 
-/* line 28, ../sass/base/icons/_linecons.scss */
+/* line 5, ../sass/base/icons/_linecons.scss */
 .icon-arrow-left-3:before {
   content: "\e036"; }
 
-/* line 29, ../sass/base/icons/_linecons.scss */
+/* line 6, ../sass/base/icons/_linecons.scss */
 .icon-arrow-left-4:before {
   content: "\e038"; }
 
-/* line 30, ../sass/base/icons/_linecons.scss */
+/* line 7, ../sass/base/icons/_linecons.scss */
 .icon-arrow-right:before {
   content: "\e035"; }
 
-/* line 31, ../sass/base/icons/_linecons.scss */
+/* line 8, ../sass/base/icons/_linecons.scss */
 .icon-arrow-right-2:before {
   content: "\e037"; }
 
-/* line 32, ../sass/base/icons/_linecons.scss */
+/* line 9, ../sass/base/icons/_linecons.scss */
 .icon-arrow-right-3:before {
   content: "\e039"; }
 
-/* line 33, ../sass/base/icons/_linecons.scss */
+/* line 10, ../sass/base/icons/_linecons.scss */
 .icon-arrow-right-4:before {
   content: "\e033"; }
 
-/* line 34, ../sass/base/icons/_linecons.scss */
+/* line 11, ../sass/base/icons/_linecons.scss */
 .icon-phone:before {
   content: "\e000"; }
 
-/* line 35, ../sass/base/icons/_linecons.scss */
+/* line 12, ../sass/base/icons/_linecons.scss */
 .icon-news:before {
   content: "\e001"; }
 
-/* line 36, ../sass/base/icons/_linecons.scss */
+/* line 13, ../sass/base/icons/_linecons.scss */
 .icon-photo:before {
   content: "\e002"; }
 
-/* line 37, ../sass/base/icons/_linecons.scss */
+/* line 14, ../sass/base/icons/_linecons.scss */
 .icon-shop:before {
   content: "\e003"; }
 
-/* line 38, ../sass/base/icons/_linecons.scss */
+/* line 15, ../sass/base/icons/_linecons.scss */
 .icon-wallet:before {
   content: "\e004"; }
 
-/* line 39, ../sass/base/icons/_linecons.scss */
+/* line 16, ../sass/base/icons/_linecons.scss */
 .icon-t-shirt:before {
   content: "\e005"; }
 
-/* line 40, ../sass/base/icons/_linecons.scss */
+/* line 17, ../sass/base/icons/_linecons.scss */
 .icon-heart:before {
   content: "\e006"; }
 
-/* line 41, ../sass/base/icons/_linecons.scss */
+/* line 18, ../sass/base/icons/_linecons.scss */
 .icon-cloud:before {
   content: "\e007"; }
 
-/* line 42, ../sass/base/icons/_linecons.scss */
+/* line 19, ../sass/base/icons/_linecons.scss */
 .icon-display:before {
   content: "\e008"; }
 
-/* line 43, ../sass/base/icons/_linecons.scss */
+/* line 20, ../sass/base/icons/_linecons.scss */
 .icon-diamond:before {
   content: "\e009"; }
 
-/* line 44, ../sass/base/icons/_linecons.scss */
+/* line 21, ../sass/base/icons/_linecons.scss */
 .icon-banknote:before {
   content: "\e00a"; }
 
-/* line 45, ../sass/base/icons/_linecons.scss */
+/* line 22, ../sass/base/icons/_linecons.scss */
 .icon-data:before {
   content: "\e00b"; }
 
-/* line 46, ../sass/base/icons/_linecons.scss */
+/* line 23, ../sass/base/icons/_linecons.scss */
 .icon-music:before {
   content: "\e00c"; }
 
-/* line 47, ../sass/base/icons/_linecons.scss */
+/* line 24, ../sass/base/icons/_linecons.scss */
 .icon-location:before {
   content: "\e00d"; }
 
-/* line 48, ../sass/base/icons/_linecons.scss */
+/* line 25, ../sass/base/icons/_linecons.scss */
 .icon-star:before {
   content: "\e00e"; }
 
-/* line 49, ../sass/base/icons/_linecons.scss */
+/* line 26, ../sass/base/icons/_linecons.scss */
 .icon-tv:before {
   content: "\e00f"; }
 
-/* line 50, ../sass/base/icons/_linecons.scss */
+/* line 27, ../sass/base/icons/_linecons.scss */
 .icon-eye:before {
   content: "\e010"; }
 
-/* line 51, ../sass/base/icons/_linecons.scss */
+/* line 28, ../sass/base/icons/_linecons.scss */
 .icon-megaphone:before {
   content: "\e011"; }
 
-/* line 52, ../sass/base/icons/_linecons.scss */
+/* line 29, ../sass/base/icons/_linecons.scss */
 .icon-study:before {
   content: "\e012"; }
 
-/* line 53, ../sass/base/icons/_linecons.scss */
+/* line 30, ../sass/base/icons/_linecons.scss */
 .icon-bubble:before {
   content: "\e013"; }
 
-/* line 54, ../sass/base/icons/_linecons.scss */
+/* line 31, ../sass/base/icons/_linecons.scss */
 .icon-sound:before {
   content: "\e014"; }
 
-/* line 55, ../sass/base/icons/_linecons.scss */
+/* line 32, ../sass/base/icons/_linecons.scss */
 .icon-video:before {
   content: "\e015"; }
 
-/* line 56, ../sass/base/icons/_linecons.scss */
+/* line 33, ../sass/base/icons/_linecons.scss */
 .icon-stack:before {
   content: "\e016"; }
 
-/* line 57, ../sass/base/icons/_linecons.scss */
+/* line 34, ../sass/base/icons/_linecons.scss */
 .icon-lab:before {
   content: "\e017"; }
 
-/* line 58, ../sass/base/icons/_linecons.scss */
+/* line 35, ../sass/base/icons/_linecons.scss */
 .icon-food:before {
   content: "\e018"; }
 
-/* line 59, ../sass/base/icons/_linecons.scss */
+/* line 36, ../sass/base/icons/_linecons.scss */
 .icon-cup:before {
   content: "\e019"; }
 
-/* line 60, ../sass/base/icons/_linecons.scss */
+/* line 37, ../sass/base/icons/_linecons.scss */
 .icon-trash:before {
   content: "\e01a"; }
 
-/* line 61, ../sass/base/icons/_linecons.scss */
+/* line 38, ../sass/base/icons/_linecons.scss */
 .icon-user:before {
   content: "\e01b"; }
 
-/* line 62, ../sass/base/icons/_linecons.scss */
+/* line 39, ../sass/base/icons/_linecons.scss */
 .icon-key:before {
   content: "\e01c"; }
 
-/* line 63, ../sass/base/icons/_linecons.scss */
+/* line 40, ../sass/base/icons/_linecons.scss */
 .icon-fire:before {
   content: "\e01d"; }
 
-/* line 64, ../sass/base/icons/_linecons.scss */
+/* line 41, ../sass/base/icons/_linecons.scss */
 .icon-clip:before {
   content: "\e01e"; }
 
-/* line 65, ../sass/base/icons/_linecons.scss */
+/* line 42, ../sass/base/icons/_linecons.scss */
 .icon-mail:before {
   content: "\e01f"; }
 
-/* line 66, ../sass/base/icons/_linecons.scss */
+/* line 43, ../sass/base/icons/_linecons.scss */
 .icon-search:before {
   content: "\e020"; }
 
-/* line 67, ../sass/base/icons/_linecons.scss */
+/* line 44, ../sass/base/icons/_linecons.scss */
 .icon-settings:before {
   content: "\e021"; }
 
-/* line 68, ../sass/base/icons/_linecons.scss */
+/* line 45, ../sass/base/icons/_linecons.scss */
 .icon-like:before {
   content: "\e022"; }
 
-/* line 69, ../sass/base/icons/_linecons.scss */
+/* line 46, ../sass/base/icons/_linecons.scss */
 .icon-calendar:before {
   content: "\e023"; }
 
-/* line 70, ../sass/base/icons/_linecons.scss */
+/* line 47, ../sass/base/icons/_linecons.scss */
 .icon-camera:before {
   content: "\e024"; }
 
-/* line 71, ../sass/base/icons/_linecons.scss */
+/* line 48, ../sass/base/icons/_linecons.scss */
 .icon-tag:before {
   content: "\e025"; }
 
-/* line 72, ../sass/base/icons/_linecons.scss */
+/* line 49, ../sass/base/icons/_linecons.scss */
 .icon-note:before {
   content: "\e026"; }
 
-/* line 73, ../sass/base/icons/_linecons.scss */
+/* line 50, ../sass/base/icons/_linecons.scss */
 .icon-clock:before {
   content: "\e027"; }
 
-/* line 74, ../sass/base/icons/_linecons.scss */
+/* line 51, ../sass/base/icons/_linecons.scss */
 .icon-lock:before {
   content: "\e028"; }
 
-/* line 75, ../sass/base/icons/_linecons.scss */
+/* line 52, ../sass/base/icons/_linecons.scss */
 .icon-vynil:before {
   content: "\e029"; }
 
-/* line 76, ../sass/base/icons/_linecons.scss */
+/* line 53, ../sass/base/icons/_linecons.scss */
 .icon-truck:before {
   content: "\e02a"; }
 
-/* line 77, ../sass/base/icons/_linecons.scss */
+/* line 54, ../sass/base/icons/_linecons.scss */
 .icon-paperplane:before {
   content: "\e02b"; }
 
-/* line 78, ../sass/base/icons/_linecons.scss */
+/* line 55, ../sass/base/icons/_linecons.scss */
 .icon-bulb:before {
   content: "\e02c"; }
 
-/* line 79, ../sass/base/icons/_linecons.scss */
+/* line 56, ../sass/base/icons/_linecons.scss */
 .icon-pen:before {
   content: "\e02d"; }
 
-/* line 80, ../sass/base/icons/_linecons.scss */
+/* line 57, ../sass/base/icons/_linecons.scss */
 .icon-params:before {
   content: "\e02e"; }
 
-/* line 81, ../sass/base/icons/_linecons.scss */
+/* line 58, ../sass/base/icons/_linecons.scss */
 .icon-world:before {
   content: "\e02f"; }
+
+/* CSS mainly related to the Responsive CSS Menu module */
+/* line 2, ../sass/components/_navigation.scss */
+.sidr a {
+  color: black; }
 
 /*# sourceMappingURL=barebones.styles.css.map */
