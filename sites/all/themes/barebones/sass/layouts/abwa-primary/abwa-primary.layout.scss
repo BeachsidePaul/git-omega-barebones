@@ -1,0 +1,113 @@
+/*******************************************************************************
+ * abwa-primary.layout.scss
+ *
+ * Styling of the "abwa-primary" layout demonstrating the golden rule and
+ * asymmetric grids with Singularity.
+ ******************************************************************************/
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+
+// Set consistent vertical and horizontal spacing units.
+$vert-spacing-unit: 20px;
+$horz-spacing-unit: 1em;
+
+// Set breakpoint values.
+$tab-portrait: 700px;
+$tab-landscape: 960px;
+$desktop : 1250px;
+
+// Set Singularity grid variables.
+@include add-grid(1);
+@include add-grid(25 15 at $tab-portrait);
+@include add-grid(25 15 9 at $desktop);
+
+@include add-gutter(25%);
+
+.l-page {
+  width: 98%;
+  max-width: 110em;
+  margin: 0 auto;
+}
+
+.l-header,
+.l-main {
+  @include pie-clearfix;
+  margin-bottom: $vert-spacing-unit;
+}
+
+@include breakpoint($tab-portrait) {
+  /* Header Area */
+  .l-branding {
+    @include grid-span(1, 1);
+  }
+  .l-region--header {
+    @include grid-span(1, 2);
+  }
+  .l-region--navigation {
+    clear: both;
+  }
+  .l-region--footer {
+    clear: both;
+  }
+  /* Content Area */
+  .l-content {
+    @include grid-span(2, 1);
+  }
+
+  /* Sidebars */
+  .has-one-sidebar {
+    .l-region--sidebar-first,
+    .l-region--sidebar-second {
+      @include grid-span(2, 1);
+    }
+  }
+  .has-two-sidebars {
+    .l-region--sidebar-first {
+      @include isolation-span(1, 1, 'both');
+    }
+    .l-region--sidebar-second {
+      @include grid-span(1, 2);
+    }
+  }
+}
+
+@include breakpoint($desktop, true) {
+  /* Header Area */
+  .l-header {
+    @include pie-clearfix;
+  }
+  .l-branding {
+    @include grid-span(1, 1);
+  }
+  .l-region--header {
+    @include grid-span(2, 2);
+  }
+  .l-region--navigation {
+    clear: both;
+  }
+  .l-region--footer {
+    clear: both;
+  }
+
+  /* Content Area */
+  .l-content {
+    @include grid-span(1, 1);
+  }
+
+  /* Sidebars */
+  .has-one-sidebar {
+    .l-region--sidebar-first,
+    .l-region--sidebar-second {
+      @include grid-span(2, 2);
+    }
+  }
+  .has-two-sidebars {
+    .l-region--sidebar-first {
+      @include grid-span(1, 2);
+    }
+    .l-region--sidebar-second {
+      @include grid-span(1, 3);
+    }
+  }
+}

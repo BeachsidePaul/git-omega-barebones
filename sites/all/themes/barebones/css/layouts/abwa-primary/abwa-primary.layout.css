@@ -1,0 +1,161 @@
+/*******************************************************************************
+ * abwa-primary.layout.scss
+ *
+ * Styling of the "abwa-primary" layout demonstrating the golden rule and
+ * asymmetric grids with Singularity.
+ ******************************************************************************/
+/* line 27, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+.l-page {
+  width: 98%;
+  max-width: 110em;
+  margin: 0 auto; }
+
+/* line 33, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+.l-header,
+.l-main {
+  *zoom: 1;
+  margin-bottom: 20px; }
+  /* line 38, C:\Ruby193\lib\ruby\gems\1.9.1\gems\compass-core-1.0.1\stylesheets\compass\utilities\general\_clearfix.scss */
+  .l-header:after,
+  .l-main:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+@media (min-width: 700px) {
+  /* Header Area */
+  /* line 41, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  .l-branding {
+    width: 62.5%;
+    float: left;
+    margin-right: -100%;
+    clear: none;
+    padding-right: 25%; }
+
+  /* line 44, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  .l-region--header {
+    width: 37.5%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    padding-right: 0; }
+
+  /* line 47, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  .l-region--navigation {
+    clear: both; }
+
+  /* line 50, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  .l-region--footer {
+    clear: both; }
+
+  /* Content Area */
+  /* line 54, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  .l-content {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    padding-right: 0; }
+
+  /* Sidebars */
+  /* line 60, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  .has-one-sidebar .l-region--sidebar-first,
+  .has-one-sidebar .l-region--sidebar-second {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    padding-right: 0; }
+
+  /* line 66, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  .has-two-sidebars .l-region--sidebar-first {
+    width: 62.5%;
+    float: left;
+    margin-right: -100%;
+    clear: both;
+    padding-right: 25%; }
+  /* line 69, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  .has-two-sidebars .l-region--sidebar-second {
+    width: 37.5%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    padding-right: 0; } }
+@media (min-width: 1250px) {
+  /* Header Area */
+  /* line 77, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  .l-header {
+    *zoom: 1; }
+    /* line 38, C:\Ruby193\lib\ruby\gems\1.9.1\gems\compass-core-1.0.1\stylesheets\compass\utilities\general\_clearfix.scss */
+    .l-header:after {
+      content: "";
+      display: table;
+      clear: both; }
+
+  /* line 80, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  .l-branding {
+    width: 51.02041%;
+    float: left;
+    margin-right: -100%;
+    clear: none;
+    padding-right: 25%; }
+
+  /* line 83, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  .l-region--header {
+    width: 48.97959%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    padding-right: 0; }
+
+  /* line 86, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  .l-region--navigation {
+    clear: both; }
+
+  /* line 89, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  .l-region--footer {
+    clear: both; }
+
+  /* Content Area */
+  /* line 94, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  .l-content {
+    width: 51.02041%;
+    float: left;
+    margin-right: -100%;
+    clear: none;
+    padding-right: 25%; }
+
+  /* Sidebars */
+  /* line 100, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  .has-one-sidebar .l-region--sidebar-first,
+  .has-one-sidebar .l-region--sidebar-second {
+    width: 48.97959%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    padding-right: 0; }
+
+  /* line 106, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  .has-two-sidebars .l-region--sidebar-first {
+    width: 30.61224%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 51.02041%;
+    clear: none;
+    padding-right: 25%; }
+  /* line 109, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  .has-two-sidebars .l-region--sidebar-second {
+    width: 18.36735%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    padding-right: 0; } }
+
+/*# sourceMappingURL=abwa-primary.layout.css.map */
