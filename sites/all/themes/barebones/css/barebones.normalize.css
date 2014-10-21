@@ -1,7 +1,15 @@
-/*******************************************************************************
- * Singularity Grid Definitions which applicable to most, if not all, themes,
- * layouts and forms used by Dynamic Domain Designs.
- ******************************************************************************/
+/*
+ * colors for the site footers
+*/
+/* line 5, ../sass/variables/_colors.scss */
+.l-footer {
+  color: white;
+  background-color: black; }
+  /* line 8, ../sass/variables/_colors.scss */
+  .l-footer a {
+    color: orange;
+    text-decoration-style: none; }
+
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 /*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
 /* line 9, C:\Ruby193\lib\ruby\gems\1.9.1\gems\compass-normalize-1.5\stylesheets\normalize\_html5.scss */

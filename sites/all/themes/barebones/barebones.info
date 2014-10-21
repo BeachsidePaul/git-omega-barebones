@@ -12,7 +12,6 @@ stylesheets[all][] = css/barebones.normalize.css
 stylesheets[all][] = css/barebones.hacks.css
 stylesheets[all][] = css/barebones.styles.css
 stylesheets[all][] = css/barebones.no-query.css
-
 ; ========================================
 ; Scripts
 ; ========================================

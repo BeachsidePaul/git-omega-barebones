@@ -1,4 +1,36 @@
 /* CSS mainly related to the Responsive CSS Menu module */
-.sidr a {
-  color: black;
+.responsive-menus.responsified span.toggler {
+  font-size: 1.25rem;
+}
+.responsive-menus.responsified .responsive-menus-simple {
+  font-family: "Lato",Calibri,Arial,sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  li a:hover {
+    color: yellow;
+  }
+// indent the menu sub-items at various levels on the responsive simple menu
+  li a {
+    padding: 0.5em 5%;
+  }
+  li ul li a {
+    padding: .5em 0 .5em 15%;
+  }
+  li ul li ul li a {
+    padding: .5em 0 .5em 25%;
+  }
+}
+.responsive-menus.responsified .responsive-menus-simple > li.last a {
+    border-bottom: medium none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.responsive-menus.responsified.responsive-toggled span.toggler.ddd_open,
+.responsive-menus.responsified:not(responsive-toggled) span.toggler.ddd_close  {
+  display: none;
+}
+.responsive-menus.responsified.responsive-toggled span.toggler.ddd_close  {
+  display: block;
+  color: red;
 }
