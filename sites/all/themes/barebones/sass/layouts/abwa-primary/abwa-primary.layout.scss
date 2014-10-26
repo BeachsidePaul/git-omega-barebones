@@ -2,41 +2,57 @@
  * abwa-primary.layout.scss
  *
  * Styling of the "abwa-primary" layout demonstrating the golden rule and
- * asymmetric grids with Singularity.
+ * asymmetric grids with Singularity (based on Omega Divine layout).
  ******************************************************************************/
 @import "compass";
 @import "breakpoint";
+@import "toolkit";
 @import "singularitygs";
-
+@import "singularity-extras";
+// turn on singularity debug so the grid can be displayed
+@include sgs-change('debug', true);
 // Set consistent vertical and horizontal spacing units.
 $vert-spacing-unit: 20px;
 $horz-spacing-unit: 1em;
 
 // Set breakpoint values.
 $tab-portrait: 700px;
-$tab-landscape: 960px;
 $desktop : 1250px;
 
-// Set Singularity grid variables.
+// Set Singularity grid variables incorporating breakpoint.
 @include add-grid(1);
 @include add-grid(25 15 at $tab-portrait);
 @include add-grid(25 15 9 at $desktop);
 
-@include add-gutter(25%);
-
+@include add-gutter(1/3);
+/*******************************************************************************
+ * Setup regions of the ABWA layout using display properties which are not
+ * dependent on the current screen size or breakpoints
+ ******************************************************************************/
 .l-page {
-  width: 98%;
+  width: 100%;
   max-width: 110em;
   margin: 0 auto;
+  @include background-grid();
 }
-
-.l-header,
+.l-branding {
+  text-align: center; // center the website logo within the branding region
+}
 .l-main {
   @include pie-clearfix;
   margin-bottom: $vert-spacing-unit;
+  padding-top: $vert-spacing-unit;
+  clear: both;
 }
-
-@include breakpoint($tab-portrait) {
+.l-footer {
+  clear: both;
+  min-height: 50px;
+}
+/*******************************************************************************
+ * Setup regions of the ABWA layout using display properties for the tablet
+ * portrait orientation device size.
+ ******************************************************************************/
+@include breakpoint($tab-portrait, true) {
   /* Header Area */
   .l-branding {
     @include grid-span(1, 1);
@@ -47,14 +63,49 @@ $desktop : 1250px;
   .l-region--navigation {
     clear: both;
   }
-  .l-region--footer {
-    clear: both;
+// the featured content region (l-featured) for the layout falls between the
+// navigation and the main content regions of the page(s)
+  .l-featured {
+    min-height: 200px;
+    overflow: hidden;
+    @include layout(4) {
+      @include add-gutter(.025);
+      @include add-gutter-style('split');
+      @include background-grid($color: Moccasin);
+      [class *= 'l-region--feature'] {
+        position: relative;
+        float: left;
+        height: 100%;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 20px;
+      }
+      .l-region--feature-first {
+        @include grid-span(1,1);
+        @include background-grid($color: Teal);
+      }
+      .l-region--feature-second {
+        @include grid-span(1,2);
+        @include background-grid($color: Brown);
+      }
+      .l-region--feature-third {
+        @include grid-span(1,3);
+        @include background-grid($color: DimGray);
+      }
+      .l-region--feature-forth {
+        @include grid-span(1,4);
+        @include background-grid($color: Coral);
+      }
+    }
+  }
+  .l-region--highlighted {
   }
   /* Content Area */
   .l-content {
     @include grid-span(2, 1);
   }
-
+  .l-region--footer {
+  }
   /* Sidebars */
   .has-one-sidebar {
     .l-region--sidebar-first,
@@ -71,6 +122,10 @@ $desktop : 1250px;
     }
   }
 }
+/*******************************************************************************
+ * Setup regions of the ABWA layout using display properties for the desktop
+ * device size.
+ ******************************************************************************/
 
 @include breakpoint($desktop, true) {
   /* Header Area */
@@ -79,6 +134,7 @@ $desktop : 1250px;
   }
   .l-branding {
     @include grid-span(1, 1);
+    text-align: center; // center the website logo within the branding region
   }
   .l-region--header {
     @include grid-span(2, 2);
@@ -86,13 +142,12 @@ $desktop : 1250px;
   .l-region--navigation {
     clear: both;
   }
-  .l-region--footer {
-    clear: both;
-  }
-
-  /* Content Area */
+ /* Content Area */
   .l-content {
     @include grid-span(1, 1);
+    background: gray;
+  }
+ .l-region--footer {
   }
 
   /* Sidebars */

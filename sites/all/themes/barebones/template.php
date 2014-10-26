@@ -3,7 +3,7 @@
  * @file
  * Template overrides as well as (pre-)process and alter hooks for the
  * Barebones theme.
- * Add unique class (mlid) to all menu items with the Menu title as class.
+ * Add unique classes, mlid and the item title, to all menu items.
 */
 
 function barebones_menu_link(array $variables) {
@@ -24,10 +24,4 @@ function barebones_menu_link(array $variables) {
   }
   $output = l($element['#title'], $element['#href'], $element['#localized_options']);
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
-}
-
-function barebones_pager($variables) {
-  dpm($variables);
-  dpm($hook);
-  $variables['tags'][0] = 'testpcc';
 }

@@ -2204,27 +2204,16 @@
 .fa-fw {
   width: .75em; }
 
-/* line 3, ../sass/base/_html.scss */
-.l-page {
-  background-image: linear-gradient(to right, orange 0%, orange 6.77966%, #ffbb3f 6.77966%, #ffbb3f 8.47458%, orange 8.47458%, orange 15.25424%, #ffbb3f 15.25424%, #ffbb3f 16.94915%, orange 16.94915%, orange 23.72881%, #ffbb3f 23.72881%, #ffbb3f 25.42373%, orange 25.42373%, orange 32.20339%, #ffbb3f 32.20339%, #ffbb3f 33.89831%, orange 33.89831%, orange 40.67797%, #ffbb3f 40.67797%, #ffbb3f 42.37288%, orange 42.37288%, orange 49.15254%, #ffbb3f 49.15254%, #ffbb3f 50.84746%, orange 50.84746%, orange 57.62712%, #ffbb3f 57.62712%, #ffbb3f 59.32203%, orange 59.32203%, orange 66.10169%, #ffbb3f 66.10169%, #ffbb3f 67.79661%, orange 67.79661%, orange 74.57627%, #ffbb3f 74.57627%, #ffbb3f 76.27119%, orange 76.27119%, orange 83.05085%, #ffbb3f 83.05085%, #ffbb3f 84.74576%, orange 84.74576%, orange 91.52542%, #ffbb3f 91.52542%, #ffbb3f 93.22034%, orange 93.22034%, orange); }
-
-/* line 6, ../sass/base/_html.scss */
-.l-branding {
-  text-align: center; }
-
-/* line 9, ../sass/base/_html.scss */
-.l-footer {
-  min-height: 50px; }
-
-/* line 15, ../sass/base/_html.scss */
+/* line 2, ../sass/base/_html.scss */
 body {
   color: black;
   font-family: "Lato", Calibri, Arial, sans-serif;
   font-weight: 300;
+  height: 100%;
   font-size: 18px;
   font-size: 1.125rem; }
 
-/* line 23, ../sass/base/_html.scss */
+/* line 12, ../sass/base/_html.scss */
 a.disabled {
   pointer-events: none; }
 
@@ -2511,6 +2500,10 @@ img, media {
   .page-member-list .view-members-list-block ul.pager li {
     display: inline; }
 
+/*******************************************************************************
+ * SCSS relating to the "featured-article" blocks contained in the features
+ * region of the theme.
+ ******************************************************************************/
 /* line 4, ../sass/components/_menus.scss */
 #block-menu-menu-abwa-primary .menu {
   width: 100%;

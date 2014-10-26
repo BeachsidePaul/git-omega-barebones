@@ -27,7 +27,7 @@ require 'rgbapng'
 require 'toolkit'
 require 'breakpoint'
 require 'singularitygs'
-require 'susy'
+require 'singularity-extras'
 require 'sass-globbing'
 require 'font-awesome-sass'
 
