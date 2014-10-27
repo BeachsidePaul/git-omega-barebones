@@ -76,7 +76,7 @@
   .l-featured {
     min-height: 200px;
     overflow: hidden;
-    background-image: linear-gradient(to right, #ffeac7, #ffeac7 0.30488%, Moccasin 0.30488%, Moccasin 24.69512%, #ffeac7 24.69512%, #ffeac7 25.30488%, Moccasin 25.30488%, Moccasin 49.69512%, #ffeac7 49.69512%, #ffeac7 50.30488%, Moccasin 50.30488%, Moccasin 74.69512%, #ffeac7 74.69512%, #ffeac7 75.30488%, Moccasin 75.30488%, Moccasin 99.69512%, #ffeac7 99.69512%, #ffeac7 100.0%); }
+    background-image: linear-gradient(to right, #ffeac7, #ffeac7 1.21951%, Moccasin, Moccasin 1.21951%, #ffeac7 1.21951%, #ffeac7 3.65854%); }
     /* line 75, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
     .l-featured [class*='l-region--feature'] {
       position: relative;
@@ -87,40 +87,40 @@
       border-radius: 20px; }
     /* line 83, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
     .l-featured .l-region--feature-first {
-      -sgs-span-settings: ("span": 1, "location": 1, "grid": 4, "gutter": 0.025, "style": "split", "start row": true, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
-      width: 24.39024%;
-      float: left;
-      margin-right: -100%;
-      margin-left: 0.30488%;
-      clear: none;
-      background-image: linear-gradient(to right, #3f9f9f, #3f9f9f 0.30488%, Teal 0.30488%, Teal 24.69512%, #3f9f9f 24.69512%, #3f9f9f 25.30488%, Teal 25.30488%, Teal 49.69512%, #3f9f9f 49.69512%, #3f9f9f 50.30488%, Teal 50.30488%, Teal 74.69512%, #3f9f9f 74.69512%, #3f9f9f 75.30488%, Teal 75.30488%, Teal 99.69512%, #3f9f9f 99.69512%, #3f9f9f 100.0%); }
-    /* line 87, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
-    .l-featured .l-region--feature-second {
-      -sgs-span-settings: ("span": 1, "location": 2, "grid": 4, "gutter": 0.025, "style": "split", "start row": false, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
-      width: 24.39024%;
-      float: left;
-      margin-right: -100%;
-      margin-left: 25.30488%;
-      clear: none;
-      background-image: linear-gradient(to right, #bb5f5f, #bb5f5f 0.30488%, Brown 0.30488%, Brown 24.69512%, #bb5f5f 24.69512%, #bb5f5f 25.30488%, Brown 25.30488%, Brown 49.69512%, #bb5f5f 49.69512%, #bb5f5f 50.30488%, Brown 50.30488%, Brown 74.69512%, #bb5f5f 74.69512%, #bb5f5f 75.30488%, Brown 75.30488%, Brown 99.69512%, #bb5f5f 99.69512%, #bb5f5f 100.0%); }
-    /* line 91, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
-    .l-featured .l-region--feature-third {
-      -sgs-span-settings: ("span": 1, "location": 3, "grid": 4, "gutter": 0.025, "style": "split", "start row": false, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
-      width: 24.39024%;
-      float: left;
-      margin-right: -100%;
-      margin-left: 50.30488%;
-      clear: none;
-      background-image: linear-gradient(to right, #8e8e8e, #8e8e8e 0.30488%, DimGray 0.30488%, DimGray 24.69512%, #8e8e8e 24.69512%, #8e8e8e 25.30488%, DimGray 25.30488%, DimGray 49.69512%, #8e8e8e 49.69512%, #8e8e8e 50.30488%, DimGray 50.30488%, DimGray 74.69512%, #8e8e8e 74.69512%, #8e8e8e 75.30488%, DimGray 75.30488%, DimGray 99.69512%, #8e8e8e 99.69512%, #8e8e8e 100.0%); }
-    /* line 95, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
-    .l-featured .l-region--feature-forth {
-      -sgs-span-settings: ("span": 1, "location": 4, "grid": 4, "gutter": 0.025, "style": "split", "start row": false, "end row": true, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
-      width: 24.39024%;
+      -sgs-span-settings: ("span": 1, "location": 1, "grid": 1, "gutter": 0.025, "style": "split", "start row": true, "end row": true, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
+      width: 97.56098%;
       float: right;
       margin-left: 0;
-      margin-right: 0.30488%;
+      margin-right: 1.21951%;
       clear: none;
-      background-image: linear-gradient(to right, #ff9f7b, #ff9f7b 0.30488%, Coral 0.30488%, Coral 24.69512%, #ff9f7b 24.69512%, #ff9f7b 25.30488%, Coral 25.30488%, Coral 49.69512%, #ff9f7b 49.69512%, #ff9f7b 50.30488%, Coral 50.30488%, Coral 74.69512%, #ff9f7b 74.69512%, #ff9f7b 75.30488%, Coral 75.30488%, Coral 99.69512%, #ff9f7b 99.69512%, #ff9f7b 100.0%); }
+      background-image: linear-gradient(to right, #3f9f9f, #3f9f9f 1.21951%, Teal, Teal 1.21951%, #3f9f9f 1.21951%, #3f9f9f 3.65854%); }
+    /* line 87, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+    .l-featured .l-region--feature-second {
+      -sgs-span-settings: ("span": 1, "location": 1, "grid": 1, "gutter": 0.025, "style": "split", "start row": true, "end row": true, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
+      width: 97.56098%;
+      float: right;
+      margin-left: 0;
+      margin-right: 1.21951%;
+      clear: none;
+      background-image: linear-gradient(to right, #bb5f5f, #bb5f5f 1.21951%, Brown, Brown 1.21951%, #bb5f5f 1.21951%, #bb5f5f 3.65854%); }
+    /* line 91, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+    .l-featured .l-region--feature-third {
+      -sgs-span-settings: ("span": 1, "location": 1, "grid": 1, "gutter": 0.025, "style": "split", "start row": true, "end row": true, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
+      width: 97.56098%;
+      float: right;
+      margin-left: 0;
+      margin-right: 1.21951%;
+      clear: none;
+      background-image: linear-gradient(to right, #8e8e8e, #8e8e8e 1.21951%, DimGray, DimGray 1.21951%, #8e8e8e 1.21951%, #8e8e8e 3.65854%); }
+    /* line 95, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+    .l-featured .l-region--feature-forth {
+      -sgs-span-settings: ("span": 1, "location": 1, "grid": 1, "gutter": 0.025, "style": "split", "start row": true, "end row": true, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
+      width: 97.56098%;
+      float: right;
+      margin-left: 0;
+      margin-right: 1.21951%;
+      clear: none;
+      background-image: linear-gradient(to right, #ff9f7b, #ff9f7b 1.21951%, Coral, Coral 1.21951%, #ff9f7b 1.21951%, #ff9f7b 3.65854%); }
 
   /* Content Area */
   /* line 104, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
@@ -165,7 +165,7 @@
  ******************************************************************************/
 @media (min-width: 1250px) {
   /* Header Area */
-  /* line 132, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  /* line 131, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
   .l-header {
     *zoom: 1; }
     /* line 38, C:\Ruby193\lib\ruby\gems\1.9.1\gems\compass-core-1.0.1\stylesheets\compass\utilities\general\_clearfix.scss */
@@ -174,7 +174,7 @@
       display: table;
       clear: both; }
 
-  /* line 135, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  /* line 134, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
   .l-branding {
     -sgs-span-settings: ("span": 1, "location": 1, "grid": 25 15 9, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": ((null: null)));
     width: 50.33557%;
@@ -184,7 +184,7 @@
     clear: none;
     text-align: center; }
 
-  /* line 139, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  /* line 138, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
   .l-region--header {
     -sgs-span-settings: ("span": 2, "location": 2, "grid": 25 15 9, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": ((null: null)));
     width: 48.99329%;
@@ -193,12 +193,62 @@
     margin-right: 0;
     clear: none; }
 
-  /* line 142, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  /* line 141, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
   .l-region--navigation {
     clear: both; }
 
-  /* Content Area */
   /* line 146, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  .l-featured {
+    min-height: 200px;
+    overflow: hidden;
+    background-image: linear-gradient(to right, #ffeac7, #ffeac7 0.30488%, Moccasin 0.30488%, Moccasin 24.69512%, #ffeac7 24.69512%, #ffeac7 25.30488%, Moccasin 25.30488%, Moccasin 49.69512%, #ffeac7 49.69512%, #ffeac7 50.30488%, Moccasin 50.30488%, Moccasin 74.69512%, #ffeac7 74.69512%, #ffeac7 75.30488%, Moccasin 75.30488%, Moccasin 99.69512%, #ffeac7 99.69512%, #ffeac7 100.0%); }
+    /* line 153, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+    .l-featured [class*='l-region--feature'] {
+      position: relative;
+      float: left;
+      height: 100%;
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 20px; }
+    /* line 161, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+    .l-featured .l-region--feature-first {
+      -sgs-span-settings: ("span": 1, "location": 1, "grid": 4, "gutter": 0.025, "style": "split", "start row": true, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
+      width: 24.39024%;
+      float: left;
+      margin-right: -100%;
+      margin-left: 0.30488%;
+      clear: none;
+      background-image: linear-gradient(to right, #3f9f9f, #3f9f9f 0.30488%, Teal 0.30488%, Teal 24.69512%, #3f9f9f 24.69512%, #3f9f9f 25.30488%, Teal 25.30488%, Teal 49.69512%, #3f9f9f 49.69512%, #3f9f9f 50.30488%, Teal 50.30488%, Teal 74.69512%, #3f9f9f 74.69512%, #3f9f9f 75.30488%, Teal 75.30488%, Teal 99.69512%, #3f9f9f 99.69512%, #3f9f9f 100.0%); }
+    /* line 165, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+    .l-featured .l-region--feature-second {
+      -sgs-span-settings: ("span": 1, "location": 2, "grid": 4, "gutter": 0.025, "style": "split", "start row": false, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
+      width: 24.39024%;
+      float: left;
+      margin-right: -100%;
+      margin-left: 25.30488%;
+      clear: none;
+      background-image: linear-gradient(to right, #bb5f5f, #bb5f5f 0.30488%, Brown 0.30488%, Brown 24.69512%, #bb5f5f 24.69512%, #bb5f5f 25.30488%, Brown 25.30488%, Brown 49.69512%, #bb5f5f 49.69512%, #bb5f5f 50.30488%, Brown 50.30488%, Brown 74.69512%, #bb5f5f 74.69512%, #bb5f5f 75.30488%, Brown 75.30488%, Brown 99.69512%, #bb5f5f 99.69512%, #bb5f5f 100.0%); }
+    /* line 169, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+    .l-featured .l-region--feature-third {
+      -sgs-span-settings: ("span": 1, "location": 3, "grid": 4, "gutter": 0.025, "style": "split", "start row": false, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
+      width: 24.39024%;
+      float: left;
+      margin-right: -100%;
+      margin-left: 50.30488%;
+      clear: none;
+      background-image: linear-gradient(to right, #8e8e8e, #8e8e8e 0.30488%, DimGray 0.30488%, DimGray 24.69512%, #8e8e8e 24.69512%, #8e8e8e 25.30488%, DimGray 25.30488%, DimGray 49.69512%, #8e8e8e 49.69512%, #8e8e8e 50.30488%, DimGray 50.30488%, DimGray 74.69512%, #8e8e8e 74.69512%, #8e8e8e 75.30488%, DimGray 75.30488%, DimGray 99.69512%, #8e8e8e 99.69512%, #8e8e8e 100.0%); }
+    /* line 173, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+    .l-featured .l-region--feature-forth {
+      -sgs-span-settings: ("span": 1, "location": 4, "grid": 4, "gutter": 0.025, "style": "split", "start row": false, "end row": true, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
+      width: 24.39024%;
+      float: right;
+      margin-left: 0;
+      margin-right: 0.30488%;
+      clear: none;
+      background-image: linear-gradient(to right, #ff9f7b, #ff9f7b 0.30488%, Coral 0.30488%, Coral 24.69512%, #ff9f7b 24.69512%, #ff9f7b 25.30488%, Coral 25.30488%, Coral 49.69512%, #ff9f7b 49.69512%, #ff9f7b 50.30488%, Coral 50.30488%, Coral 74.69512%, #ff9f7b 74.69512%, #ff9f7b 75.30488%, Coral 75.30488%, Coral 99.69512%, #ff9f7b 99.69512%, #ff9f7b 100.0%); }
+
+  /* Content Area */
+  /* line 179, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
   .l-content {
     -sgs-span-settings: ("span": 1, "location": 1, "grid": 25 15 9, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": ((null: null)));
     width: 50.33557%;
@@ -209,7 +259,7 @@
     background: gray; }
 
   /* Sidebars */
-  /* line 155, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  /* line 188, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
   .has-one-sidebar .l-region--sidebar-first,
   .has-one-sidebar .l-region--sidebar-second {
     -sgs-span-settings: ("span": 2, "location": 2, "grid": 25 15 9, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": ((null: null)));
@@ -219,7 +269,7 @@
     margin-right: 0;
     clear: none; }
 
-  /* line 161, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  /* line 194, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
   .has-two-sidebars .l-region--sidebar-first {
     -sgs-span-settings: ("span": 1, "location": 2, "grid": 25 15 9, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": ((null: null)));
     width: 30.20134%;
@@ -227,7 +277,7 @@
     margin-right: -100%;
     margin-left: 51.00671%;
     clear: none; }
-  /* line 164, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
+  /* line 197, ../../../sass/layouts/abwa-primary/abwa-primary.layout.scss */
   .has-two-sidebars .l-region--sidebar-second {
     -sgs-span-settings: ("span": 1, "location": 3, "grid": 25 15 9, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": ((null: null)));
     width: 18.12081%;
