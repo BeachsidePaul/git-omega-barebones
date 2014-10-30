@@ -19,6 +19,11 @@
     <?php print render($page['header']); ?>
     <?php print render($page['navigation']); ?>
   </header>
+  <div class = "l-gallery">
+    <div class = "featured-gallery">
+      <?php print render($page['gallery']); ?>
+    </div>
+  </div>
   <div class = "l-featured">
     <div class = "featured-article-frame" >
       <?php print render($page['feature_first']); ?>

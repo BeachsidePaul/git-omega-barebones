@@ -1,9 +1,102 @@
 /*******************************************************************************
- * SCSS relating to the "featured-article" blocks contained in the features
- * region of the theme.
+ * SCSS relating to the "featured" region and the "featured-article" blocks it
+ * contains. The featured content region (l-featured) for the layout falls
+ * between the gallery and the main content regions
  ******************************************************************************/
-.featured-article-frame {
+// turn on singularity debug so the grid can be displayed
+@include sgs-change('debug', true);
+.l-featured {
+  [class *= 'l-region--feature'] {
+    position: relative;
+    float: left;
+    height: 100%;
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    padding: 10px;
+    min-height: 200px;
+    overflow: hidden;
+    h2 {
+      text-align: center;
+      font-size: larger;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+  }
+// Default or smallest screen size
+  @include layout(1) {
+    @include add-gutter(.025);
+    @include add-gutter-style('split');
+    @include background-grid($color: Moccasin);
+    .l-region--feature-first {
+      @include grid-span(1,1);
+      @include background-grid($color: Teal);
+    }
+    .l-region--feature-second {
+      @include grid-span(1,1);
+      @include background-grid($color: Brown);
+    }
+    .l-region--feature-third {
+      @include grid-span(1,1);
+      @include background-grid($color: DimGray);
+    }
+    .l-region--feature-forth {
+      @include grid-span(1,1);
+      @include background-grid($color: Coral);
+    }
+  }
+  @include breakpoint($screen-tablet, true) {
+    @include layout(2) {
+      @include add-gutter(.025);
+      @include add-gutter-style('split');
+      @include background-grid($color: Moccasin);
+      .l-region--feature-first {
+        @include grid-span(1,1);
+        @include background-grid($color: Teal);
+      }
+      .l-region--feature-second {
+        @include grid-span(1,2);
+        @include background-grid($color: Brown);
+      }
+      .l-region--feature-third {
+        @include grid-span(1,1);
+        clear: both;
+        @include background-grid($color: DimGray);
+      }
+      .l-region--feature-forth {
+        @include grid-span(1,2);
+        @include background-grid($color: Coral);
+      }
+    }
+  }
+  @include breakpoint($screen-desktop, true) {
+    @include layout(4) {
+      @include add-gutter(.025);
+      @include add-gutter-style('split');
+      @include background-grid($color: Moccasin);
+      .l-region--feature-first {
+        @include grid-span(1,1);
+        @include background-grid($color: Teal);
+      }
+      .l-region--feature-second {
+        @include grid-span(1,2);
+        @include background-grid($color: Brown);
+      }
+      .l-region--feature-third {
+        @include grid-span(1,3);
+        @include background-grid($color: DimGray);
+      }
+      .l-region--feature-forth {
+        @include grid-span(1,4);
+        @include background-grid($color: Coral);
+      }
+    }
+  }
+}
 
+.featured-article-frame {
 }
 .featured-article-frame:before {
 }

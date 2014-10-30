@@ -7,6 +7,7 @@ template = abwa-primary-layout
 regions[branding]       = Branding
 regions[header]         = Header
 regions[navigation]     = Navigation bar
+regions[gallery]        = Header Gallery
 regions[feature_first]  = First Feature
 regions[feature_second] = Second Feature
 regions[feature_third]  = Third Feature

@@ -1,3 +1,18 @@
+/*******************************************************************************
+ * _breakpoints.scss
+ *
+ * The breakpoints configured as variable names that can be used with the
+ * "breakpoint" sass gem.
+ ******************************************************************************/
+/*******************************************************************************
+ * This first set of breakpoints should match the breakpoints configured in the
+ * barebones.info file that are used by the combination of the breakpoints and
+ * the picture modules.
+ ******************************************************************************/
+/*******************************************************************************
+ * This set of breakpoints will be used with the featured articles blocks and
+ * content.
+ ******************************************************************************/
 /*
  * colors for the site footers
 */
