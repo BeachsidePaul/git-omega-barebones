@@ -1,0 +1,55 @@
+name = Barebones
+description = Please provide a description for your theme.
+base theme = omega
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+; ========================================
+; Stylesheets
+; ========================================
+stylesheets[all][] = css/barebones.normalize.css
+stylesheets[all][] = css/barebones.hacks.css
+stylesheets[all][] = css/barebones.styles.css
+stylesheets[all][] = css/barebones.no-query.css
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/barebones.behaviors.js
+; ========================================
+; Regions
+; ========================================
+regions[branding]         = Branding
+regions[header]           = Header
+regions[navigation]       = Navigation
+regions[gallery]          = Header Gallery
+regions[feature_first]    = First Feature
+regions[feature_second]   = Second Feature
+regions[feature_third]    = Third Feature
+regions[feature_forth]    = Forth Feature
+regions[highlighted]      = Highlighted
+regions[help]             = Help
+regions[content]          = Content
+regions[sidebar_first]    = First Sidebar
+regions[sidebar_second]   = Second Sidebar
+regions[footer]           = Footer
+; ==========================================================
+; Breakpoints for the Picture and Breakpoints Modules
+; ==========================================================
+; Pictures 2.0 requires the breakpoints be set from the
+; "largest" (e.g. wide) to the "smallest" (e.g. mobile)
+;
+; Huge devices, basically televisions
+breakpoints[screen-TV] = only screen and (min-width: 3450px)
+; Extra large devices, very big monitors
+breakpoints[screen-XL] = only screen and (min-width: 1251px)
+; Large devices (desktops and large monitors 1050 and up)
+breakpoints[screen-LD] = only screen and (min-width: 1051px) and (max-width: 1250px)
+; Medium devices (tablets in landscape and small desktop monitors)
+breakpoints[screen-MD] = only screen and (min-width: 701px) and (max-width: 1050px)
+; Small devicess (generally tablets in portrait mode)
+breakpoints[screen-SM] = only screen and (min-width: 481px) and (max-width: 700px)
+; Phone Landscape (cell phones in landscape mode)
+breakpoints[screen-CL] = only screen and (min-width: 321px) and (max-width: 480px)
+; Extra small devices (cell phones in portrait mode)
+breakpoints[screen-XS] = only screen and (min-width: 0px) and (max-width: 320px)

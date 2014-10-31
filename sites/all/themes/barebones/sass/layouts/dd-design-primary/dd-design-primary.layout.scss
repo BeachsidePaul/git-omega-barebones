@@ -1,0 +1,131 @@
+/*******************************************************************************
+ * dd-design-primary.layout.scss
+ *
+ * Styling of the "dd-design-primary" layout demonstrating the golden rule and
+ * asymmetric grids with Singularity (based on Omega Divine layout).
+ ******************************************************************************/
+@import "compass";
+@import "breakpoint";
+@import "toolkit";
+@import "singularitygs";
+@import "singularity-extras";
+@import "barebones.styles";
+// turn on singularity debug so the grid can be displayed
+@include sgs-change('debug', true);
+
+// Set Singularity grid variables incorporating breakpoint.
+@include add-grid(1);
+@include add-grid(25 15 at $screen-tablet);
+@include add-grid(25 15 9 at $screen-desktop);
+
+@include add-gutter(1/3);
+/*******************************************************************************
+ * Setup regions of the layout using default display properties which are used
+ * dependent on the current screen size or breakpoints
+ ******************************************************************************/
+.l-page {
+  width: 100%;
+  max-width: 110em;
+  margin: 0 auto;
+  @include background-grid();
+}
+.l-branding {
+  text-align: center; // center the website logo within the branding region
+}
+
+.l-main {
+  @include pie-clearfix;
+  margin-bottom: $vert-spacing-unit;
+  padding-top: $vert-spacing-unit;
+  clear: both;
+}
+.l-footer {
+  clear: both;
+  min-height: 50px;
+}
+/*******************************************************************************
+ * Setup regions of the layout using display properties for the tablet
+ * portrait orientation device size.
+ ******************************************************************************/
+@include breakpoint($screen-tablet, true) {
+  /* Header Area */
+  .l-branding {
+    @include grid-span(1, 1);
+  }
+  .l-region--header {
+    @include grid-span(1, 2);
+  }
+  .l-region--navigation {
+    clear: both;
+  }
+  .l-region-featured {
+  }
+  .l-region--highlighted {
+  }
+  /* Content Area */
+  .l-content {
+    @include grid-span(2, 1);
+  }
+  .l-region--footer {
+  }
+  /* Sidebars */
+  .has-one-sidebar {
+    .l-region--sidebar-first,
+    .l-region--sidebar-second {
+      @include grid-span(2, 1);
+    }
+  }
+  .has-two-sidebars {
+    .l-region--sidebar-first {
+      @include isolation-span(1, 1, 'both');
+    }
+    .l-region--sidebar-second {
+      @include grid-span(1, 2);
+    }
+  }
+}
+/*******************************************************************************
+ * Setup regions of the layout using display properties for the desktop
+ * device size.
+ ******************************************************************************/
+@include breakpoint($screen-desktop, true) {
+  .l-header {
+    @include pie-clearfix;
+  }
+  .l-branding {
+    @include grid-span(1, 1);
+    text-align: center; // center the website logo within the branding region
+  }
+  .l-region--header {
+    @include grid-span(2, 2);
+  }
+  .l-region--navigation {
+    clear: both;
+  }
+// the featured content region (l-featured) for the layout falls between the
+// navigation and the main content regions of the page(s)
+  .l-featured {
+  }
+/* Content Area */
+  .l-content {
+    @include grid-span(1, 1);
+    background: gray;
+  }
+ .l-region--footer {
+  }
+/* Sidebars */
+  .has-one-sidebar {
+    .l-region--sidebar-first,
+    .l-region--sidebar-second {
+      @include grid-span(2, 2);
+    }
+  }
+  .has-two-sidebars {
+    .l-region--sidebar-first {
+      @include grid-span(1, 2);
+    }
+    .l-region--sidebar-second {
+      @include grid-span(1, 3);
+    }
+  }
+}

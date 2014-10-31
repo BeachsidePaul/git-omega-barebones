@@ -1,0 +1,165 @@
+$ABWA-level-1-menu-items: 6;
+$ABWA-level-1-menu-item-width: (100/$ABWA-level-1-menu-items) * 1%;
+// top level menu list
+#block-menu-menu-abwa-primary .menu {
+  width: 100%;
+  margin: 20px auto;
+  border: 1px solid #222;
+  background-color: #111;
+  background-image: linear-gradient(#444, #111);
+  border-radius: 10px;
+  box-shadow: 0 1px 1px #777;
+  zoom:1;
+  padding: 0;
+}
+#block-menu-menu-abwa-primary .menu:before,
+#block-menu-menu-abwa-primary .menu:after {
+  content: "";
+  display: table;
+}
+#block-menu-menu-abwa-primary .menu:after {
+  clear: both;
+}
+
+#block-menu-menu-abwa-primary ul.menu li {
+  float: left;
+  border-right: 1px solid #222;
+  box-shadow: 1px 0 0 #444;
+  position: relative;
+}
+#block-menu-menu-abwa-primary ul.menu li.level-1 {
+  width: $ABWA-level-1-menu-item-width;
+}
+#block-menu-menu-abwa-primary .menu li:hover > a {
+  color: #fafafa;
+}
+#block-menu-menu-abwa-primary .menu li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+}
+
+#block-menu-menu-abwa-primary .menu a {
+  float: left;
+  padding: 12px 10px;
+  color: #999;
+  text-transform: uppercase;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #000;
+  width: 100%;
+}
+
+#block-menu-menu-abwa-primary .menu li.level-1 a {
+  text-align: center;
+}
+#block-menu-menu-abwa-primary .menu li:not(.level-1) a {
+  text-align: left;
+}
+
+#block-menu-menu-abwa-primary .menu ul {
+  margin: 20px 0 0 0;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  z-index: 1;
+  background: #444;
+  background: linear-gradient(#444, #111);
+  box-shadow: 0 -1px 0 rgba(255,255,255,.3);
+  border-radius: 3px;
+  transition: all .2s ease-in-out;
+}
+
+
+#block-menu-menu-abwa-primary .menu ul ul {
+  top: -1px;
+  left: 100%;
+  margin: 0 0 0 20px;
+  box-shadow: -1px 0 0 rgba(255,255,255,.3);
+}
+
+#block-menu-menu-abwa-primary .menu ul li {
+  float: none;
+  display: block;
+  border: 0;
+  box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+}
+
+#block-menu-menu-abwa-primary .menu ul li:last-child {
+  box-shadow: none;
+}
+
+#block-menu-menu-abwa-primary .menu ul a {
+  padding: 10px 7px;
+  display: block;
+  white-space: nowrap;
+  float: none;
+  text-transform: none;
+}
+
+#block-menu-menu-abwa-primary .menu ul a:hover {
+  background-color: #0186ba;
+  background-image: linear-gradient(#04acec, #0186ba);
+}
+#block-menu-menu-abwa-primary .menu ul li:first-child > a {
+  border-radius: 3px 3px 0 0;
+}
+// first sub-item on main dropdown menu
+#block-menu-menu-abwa-primary .menu ul li:first-child > a:after {
+  content: '';
+  position: absolute;
+  left: 40px;
+  top: -6px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #444;
+}
+
+#block-menu-menu-abwa-primary .menu ul ul li:first-child a:after {
+  left: -6px;
+  top: 50%;
+  margin-top: -6px;
+  border-left: 0;
+  border-bottom: 6px solid transparent;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #3b3b3b;
+}
+
+#block-menu-menu-abwa-primary .menu ul li:first-child a:hover:after {
+  border-bottom-color: #04acec;
+}
+
+#block-menu-menu-abwa-primary .menu ul ul li:first-child a:hover:after {
+  border-right-color: #0299d3;
+  border-bottom-color: transparent;
+}
+
+#block-menu-menu-abwa-primary .menu ul li:last-child > a {
+  border-radius: 0 0 3px 3px;
+}
+// over-ride syst3em.menus.theme.css definitions
+#block-menu-menu-abwa-primary .menu .leaf,
+#block-menu-menu-abwa-primary .menu .expanded {
+  list-style: none;
+}
+
+#block-menu-menu-abwa-primary .menu a.fa:before,
+#block-menu-menu-abwa-primary .responsive-menus-simple a.fa:before {
+  margin-right: .5em;
+  font-family: FontAwesome;
+}
+
+#block-menu-menu-abwa-primary .menu a.icon:before,
+#block-menu-menu-abwa-primary .responsive-menus-simple a.icon:before {
+  margin-right: 1em;
+  font-family: linecons;
+}
+
+#block-menu-menu-abwa-primary .responsive-menus-simple .fa {
+  font-family: inherit;
+  font-weight: inherit;
+}

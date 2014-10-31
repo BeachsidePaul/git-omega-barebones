@@ -1,0 +1,14 @@
+
+body {
+  color: black;
+  font-family: $default-font-family;
+  font-weight: 300;
+  height: 100%;
+  @include pix-to-rem(font-size, 18px);
+  @include background-grid();
+}
+
+// general navigation class to allow a link to be "non-clickable" via css
+a.disabled {
+  pointer-events: none;
+}

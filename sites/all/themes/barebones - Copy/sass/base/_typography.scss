@@ -1,0 +1,17 @@
+#mp-menu {
+  .fa:before,
+  .icon:before {
+    color: black;
+  }
+  .fa:before {
+    @include pix-to-rem(font-size, 28px);
+  }
+  a {
+    text-decoration: none;
+    font-weight: lighter;
+    color: black;
+  }
+  a:hover {
+    color: yellow;
+  }
+}

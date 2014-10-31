@@ -1,0 +1,49 @@
+/*******************************************************************************
+ * SCSS relating to the "featured-gallery" region and the images it contains.
+ * The featured gallery region (l-gallery) for the layout falls between the
+ * navigation and the featured article content regions.
+ ******************************************************************************/
+// turn on singularity debug so the grid can be displayed
+@include sgs-change('debug', true);
+.box {
+  width: 20%;
+  padding-bottom: 20%;
+  position: relative;
+  float: left;
+}
+@include breakpoint($screen-XS, true) {
+  .box {
+    width: 100%;
+    padding-bottom: 100%;
+  }
+}
+@include breakpoint($screen-CL, true) {
+  .box {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+}
+@include breakpoint($screen-SM, true) {
+  .box {
+    width: 33.333%;
+    padding-bottom: 33.333%;
+  }
+}
+@include breakpoint($screen-MD, true) {
+  .box {
+    width: 25%;
+    padding-bottom: 25%;
+  }
+}
+@include breakpoint($screen-LD, true) {
+  .box {
+    width: 20%;
+    padding-bottom: 20%;
+  }
+}
+@include breakpoint($screen-XL, true) {
+  .box {
+    width: 16.666%;
+    padding-bottom: 16.666%;
+  }
+}

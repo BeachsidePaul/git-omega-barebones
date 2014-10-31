@@ -1,8 +1,8 @@
 // Primary website menu
-$ABWA-level-1-menu-items: 7;
-$ABWA-level-1-menu-item-width: (100/$ABWA-level-1-menu-items) * 1%;
+$dd-design-level-1-menu-items: 7;
+$dd-design-level-1-menu-item-width: (100/$dd-design-level-1-menu-items) * 1%;
 
-#block-menu-menu-abwa-primary .menu {
+#block-menu-menu-dd-design-primary .menu {
   width: 100%;
   margin: 20px auto;
   border: 1px solid #222;
@@ -48,7 +48,7 @@ $ABWA-level-1-menu-item-width: (100/$ABWA-level-1-menu-items) * 1%;
     border-right: 1px solid #222;
     box-shadow: 1px 0 0 #444;
     position: relative;
-    width: $ABWA-level-1-menu-item-width;
+    width: $dd-design-level-1-menu-item-width;
   }
   li:hover > a {
     color: #fafafa;
@@ -124,22 +124,22 @@ $ABWA-level-1-menu-item-width: (100/$ABWA-level-1-menu-items) * 1%;
   }
 }
 
-#block-menu-menu-abwa-primary .menu:before,
-#block-menu-menu-abwa-primary .menu:after {
+#block-menu-menu-dd-design-primary .menu:before,
+#block-menu-menu-dd-design-primary .menu:after {
     content: "";
     display: table;
   }
-#block-menu-menu-abwa-primary .menu:after {
+#block-menu-menu-dd-design-primary .menu:after {
     clear: both;
   }
 
-#block-menu-menu-abwa-primary .menu a.fa:before,
-#block-menu-menu-abwa-primary .responsive-menus-simple a.fa:before {
+#block-menu-menu-dd-design-primary .menu a.fa:before,
+#block-menu-menu-dd-design-primary .responsive-menus-simple a.fa:before {
   margin-right: .5em;
   font-family: FontAwesome;
 }
 
-#block-menu-menu-abwa-primary .responsive-menus-simple .fa {
+#block-menu-menu-dd-design-primary .responsive-menus-simple .fa {
   font-family: inherit;
   font-weight: inherit;
 }

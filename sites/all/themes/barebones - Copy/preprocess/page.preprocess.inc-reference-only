@@ -1,0 +1,87 @@
+<?php
+/**
+ * Implements hook_preprocess_page().
+ */
+function barebones_preprocess_page(&$variables) {
+  $menuItems = menu_tree_all_data('menu-abwa-primary', NULL, NULL);
+  $returnHtml = NULL;
+  if (!count($menuItems)) {
+    return($returnHtml);
+  }
+  $returnHtml .= '<!-- mp-menu -->';
+  $returnHtml .= '<section class="main-menu-background">';
+  $returnHtml .= '<nav id="mp-menu" class="mp-menu">';
+  $returnHtml .= '<div class="mp-level">';
+  $returnHtml .= '<h2 class="icon icon-world">ABWA</h2>';
+  $returnHtml .= '<ul>'; // Start the main menu list of options
+  $returnHtml .= buildSlideoutMenu($menuItems);
+  $returnHtml .= '</ul>';
+  $returnHtml .= '</div>';
+  $returnHtml .= '</nav>';
+  $returnHtml .= '</section>';
+  $returnHtml .= '<!-- /mp-menu-->';
+  $variables['slideout_menu'] = $returnHtml;
+}
+function buildSlideoutMenu($menuItems) {
+// Cycle through each of the menu items for the requested menu
+  $returnHtml = '';
+  foreach ($menuItems as $menuItem) {
+    $itemHtml = '';
+    // set the actual link for the menu item (replace the <front> flag if needed)
+    $linkRef = ($menuItem['link']['href'] == '<front>') ? '/' : $menuItem['link']['href'];
+    if (array_key_exists('below', $menuItem)) {
+      // if this is not a "parent" or "new-level" item, just go add the single item
+      if (count($menuItem['below']) == 0) {
+        $itemHtml = addMenuItem($menuItem, $linkRef);
+      } else {
+        $itemHtml = addParentItem($menuItem, $linkRef);
+      }
+    }
+    $returnHtml .= $itemHtml;
+  }
+  return($returnHtml);
+}
+function getClassString($menuItem) {
+  $stringHtml = '';
+  // this class stuff is all based on having the "menu_attributes" module installed
+  if (isset($menuItem['link']['localized_options']['attributes']['class'])) {
+  // If the class has been set, check to see if it is an "icon-..." for display
+  // and if the class is using an "icon-" it's from the Linecons character set,
+  // this sliding menu also supports the FontAwesome characters so test for
+  // that (fa-...) if needed.
+    foreach ($menuItem['link']['localized_options']['attributes']['class'] as $class) {
+      $positionIcon = strpos($class, 'icon-');
+      $positionFa = strpos($class, 'fa-');
+     if ($positionIcon !== FALSE) {
+        $stringHtml .= 'class="icon '.$class.'" ';
+      } else if ($positionFa !== FALSE) {
+        $stringHtml .= 'class="fa '.$class.'" ';
+      }
+    }
+  }
+  return($stringHtml);
+}
+function addMenuItem($menuItem, $linkRef) {
+  // look for and format any classes used on this menu item
+  $classHtml = getClassString($menuItem);
+  //$menuTitle = $menuItem['link']['title'];
+  $itemHtml = '';
+  $itemHtml .= '<li><a href="'.$linkRef.'" ><i '.$classHtml.'></i>';
+  $itemHtml .= $menuItem['link']['title'].'</a></li>';
+  return($itemHtml);
+}
+function addParentItem($menuItem, $linkRef) {
+  $itemHtml  = '';
+  $classHtml = getClassString($menuItem);
+  $itemHtml .= '<li class="icon icon-arrow-left">';
+  $itemHtml .= '<a href="'.$linkRef.'" ><i '.$classHtml.'></i>'.$menuItem['link']['title'].'</a>';
+  $itemHtml .= '<div class="mp-level">';
+  $itemHtml .= '<h2 '.$classHtml.'>'.$menuItem['link']['title'].'</h2>';
+  $itemHtml .= '<a class="mp-back" href="#">back</a>';
+  if (count($menuItem['below'])) {
+      $itemHtml .= '<ul>';
+      $itemHtml .= buildSlideoutMenu($menuItem['below']);
+  }
+  $itemHtml .= '</ul></div></li>';
+  return($itemHtml);
+}

@@ -1,0 +1,34 @@
+/*******************************************************************************
+ * _breakpoints.scss
+ *
+ * The breakpoints configured as variable names that can be used with the
+ * "breakpoint" sass gem.
+ ******************************************************************************/
+/*******************************************************************************
+ * This first set of breakpoints should match the breakpoints configured in the
+ * barebones.info file that are used by the combination of the breakpoints and
+ * the picture modules.
+ ******************************************************************************/
+$screen-TV: 3450px;
+// Extra large devices, very big monitors
+$screen-XL: 1251px;
+// Large devices (desktops and large monitors 1200 and up)
+$screen-LD: 1051px 1250px;
+// Medium devices (tablets in landscape and small desktop monitors)
+$screen-MD: 701px 1050px;
+// Small devicess (generally tablets in portrait mode)
+$screen-SM: 481px 700px;
+// Phone Landscape (cell phones in landscape mode)
+$screen-CL: 321px 480px;
+// Extra small devices (cell phones in portrait mode)
+$screen-XS: 0px 320px;
+/*******************************************************************************
+ * This set of breakpoints will be used with the featured articles blocks and
+ * content.
+ ******************************************************************************/
+$screen-tablet: 700px;
+$screen-desktop: 1000px;
+/*******************************************************************************
+ * This set of breakpoints will be used with the featured gallery block and
+ * content.
+ ******************************************************************************/
