@@ -34,6 +34,7 @@
       @include grid-span(1,1);
       @include background-grid($color: Teal);
     }
+
     .l-region--feature-second {
       @include grid-span(1,1);
       @include background-grid($color: Brown);

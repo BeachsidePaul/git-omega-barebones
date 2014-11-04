@@ -11,24 +11,20 @@
  ******************************************************************************/
 $screen-TV: 3450px;
 // Extra large devices, very big monitors
-$screen-XL: 1251px;
-// Large devices (desktops and large monitors 1200 and up)
-$screen-LD: 1051px 1250px;
-// Medium devices (tablets in landscape and small desktop monitors)
-$screen-MD: 701px 1050px;
+$screen-XL: 1600px;
+// Large devices (desktops and large monitors)
+$screen-LD: 1051px;
+// Medium devices (tablets in landscape and small monitors)
+$screen-MD: 701px;
 // Small devicess (generally tablets in portrait mode)
-$screen-SM: 481px 700px;
+$screen-SM: 481px;
 // Phone Landscape (cell phones in landscape mode)
-$screen-CL: 321px 480px;
+$screen-CL: 321px;
 // Extra small devices (cell phones in portrait mode)
-$screen-XS: 0px 320px;
+$screen-XS: 0px;
 /*******************************************************************************
  * This set of breakpoints will be used with the featured articles blocks and
  * content.
  ******************************************************************************/
 $screen-tablet: 700px;
 $screen-desktop: 1000px;
-/*******************************************************************************
- * This set of breakpoints will be used with the featured gallery block and
- * content.
- ******************************************************************************/

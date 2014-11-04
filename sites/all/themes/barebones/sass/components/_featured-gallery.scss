@@ -5,45 +5,31 @@
  ******************************************************************************/
 // turn on singularity debug so the grid can be displayed
 @include sgs-change('debug', true);
-.box {
-  width: 20%;
-  padding-bottom: 20%;
-  position: relative;
-  float: left;
-}
-@include breakpoint($screen-XS, true) {
-  .box {
-    width: 100%;
-    padding-bottom: 100%;
+.l-gallery .flexslider {
+  max-width: 75%;
+  margin: 10px auto;
+  @include breakpoint($screen-XS, true) {
+    max-width: 75%;
+    margin: 10px auto;
   }
-}
-@include breakpoint($screen-CL, true) {
-  .box {
-    width: 50%;
-    padding-bottom: 50%;
+  @include breakpoint($screen-CL, true) {
+    max-width: 75%;
+    margin: 10px auto;
   }
-}
-@include breakpoint($screen-SM, true) {
-  .box {
-    width: 33.333%;
-    padding-bottom: 33.333%;
+  @include breakpoint($screen-SM, true) {
+    max-width: 80%;
+    margin: 10px auto;
   }
-}
-@include breakpoint($screen-MD, true) {
-  .box {
-    width: 25%;
-    padding-bottom: 25%;
+  @include breakpoint($screen-MD, true) {
+    max-width: 80%;
+    margin: 10px auto;
   }
-}
-@include breakpoint($screen-LD, true) {
-  .box {
-    width: 20%;
-    padding-bottom: 20%;
+  @include breakpoint($screen-LD, true) {
+    max-width: 830px;
+    margin: 10px auto;
   }
-}
-@include breakpoint($screen-XL, true) {
-  .box {
-    width: 16.666%;
-    padding-bottom: 16.666%;
+  @include breakpoint($screen-XL, true) {
+    max-width: 830px;
+    margin: 10px auto;
   }
 }

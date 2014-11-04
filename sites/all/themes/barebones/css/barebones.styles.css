@@ -2240,10 +2240,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  * This set of breakpoints will be used with the featured articles blocks and
  * content.
  ******************************************************************************/
-/*******************************************************************************
- * This set of breakpoints will be used with the featured gallery block and
- * content.
- ******************************************************************************/
 /*
  * colors for the site footers
 */
@@ -2623,7 +2619,7 @@ img, media {
     margin-right: 1.21951%;
     clear: none;
     background-image: linear-gradient(to right, #3f9f9f, #3f9f9f 1.21951%, Teal, Teal 1.21951%, #3f9f9f 1.21951%, #3f9f9f 3.65854%); }
-  /* line 37, ../sass/components/_featured-articles.scss */
+  /* line 38, ../sass/components/_featured-articles.scss */
   .l-featured .l-region--feature-second {
     -sgs-span-settings: ("span": 1, "location": 1, "grid": 1, "gutter": 0.025, "style": "split", "start row": true, "end row": true, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
     width: 97.56098%;
@@ -2632,7 +2628,7 @@ img, media {
     margin-right: 1.21951%;
     clear: none;
     background-image: linear-gradient(to right, #bb5f5f, #bb5f5f 1.21951%, Brown, Brown 1.21951%, #bb5f5f 1.21951%, #bb5f5f 3.65854%); }
-  /* line 41, ../sass/components/_featured-articles.scss */
+  /* line 42, ../sass/components/_featured-articles.scss */
   .l-featured .l-region--feature-third {
     -sgs-span-settings: ("span": 1, "location": 1, "grid": 1, "gutter": 0.025, "style": "split", "start row": true, "end row": true, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
     width: 97.56098%;
@@ -2641,7 +2637,7 @@ img, media {
     margin-right: 1.21951%;
     clear: none;
     background-image: linear-gradient(to right, #8e8e8e, #8e8e8e 1.21951%, DimGray, DimGray 1.21951%, #8e8e8e 1.21951%, #8e8e8e 3.65854%); }
-  /* line 45, ../sass/components/_featured-articles.scss */
+  /* line 46, ../sass/components/_featured-articles.scss */
   .l-featured .l-region--feature-forth {
     -sgs-span-settings: ("span": 1, "location": 1, "grid": 1, "gutter": 0.025, "style": "split", "start row": true, "end row": true, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
     width: 97.56098%;
@@ -2654,7 +2650,7 @@ img, media {
     /* line 8, ../sass/components/_featured-articles.scss */
     .l-featured {
       background-image: linear-gradient(to right, #ffeac7, #ffeac7 0.60976%, Moccasin 0.60976%, Moccasin 49.39024%, #ffeac7 49.39024%, #ffeac7 50.60976%, Moccasin 50.60976%, Moccasin 99.39024%, #ffeac7 99.39024%, #ffeac7 100.0%); }
-      /* line 55, ../sass/components/_featured-articles.scss */
+      /* line 56, ../sass/components/_featured-articles.scss */
       .l-featured .l-region--feature-first {
         -sgs-span-settings: ("span": 1, "location": 1, "grid": 2, "gutter": 0.025, "style": "split", "start row": true, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
         width: 48.78049%;
@@ -2663,7 +2659,7 @@ img, media {
         margin-left: 0.60976%;
         clear: none;
         background-image: linear-gradient(to right, #3f9f9f, #3f9f9f 0.60976%, Teal 0.60976%, Teal 49.39024%, #3f9f9f 49.39024%, #3f9f9f 50.60976%, Teal 50.60976%, Teal 99.39024%, #3f9f9f 99.39024%, #3f9f9f 100.0%); }
-      /* line 59, ../sass/components/_featured-articles.scss */
+      /* line 60, ../sass/components/_featured-articles.scss */
       .l-featured .l-region--feature-second {
         -sgs-span-settings: ("span": 1, "location": 2, "grid": 2, "gutter": 0.025, "style": "split", "start row": false, "end row": true, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
         width: 48.78049%;
@@ -2672,7 +2668,7 @@ img, media {
         margin-right: 0.60976%;
         clear: none;
         background-image: linear-gradient(to right, #bb5f5f, #bb5f5f 0.60976%, Brown 0.60976%, Brown 49.39024%, #bb5f5f 49.39024%, #bb5f5f 50.60976%, Brown 50.60976%, Brown 99.39024%, #bb5f5f 99.39024%, #bb5f5f 100.0%); }
-      /* line 63, ../sass/components/_featured-articles.scss */
+      /* line 64, ../sass/components/_featured-articles.scss */
       .l-featured .l-region--feature-third {
         -sgs-span-settings: ("span": 1, "location": 1, "grid": 2, "gutter": 0.025, "style": "split", "start row": true, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
         width: 48.78049%;
@@ -2682,7 +2678,7 @@ img, media {
         clear: none;
         clear: both;
         background-image: linear-gradient(to right, #8e8e8e, #8e8e8e 0.60976%, DimGray 0.60976%, DimGray 49.39024%, #8e8e8e 49.39024%, #8e8e8e 50.60976%, DimGray 50.60976%, DimGray 99.39024%, #8e8e8e 99.39024%, #8e8e8e 100.0%); }
-      /* line 68, ../sass/components/_featured-articles.scss */
+      /* line 69, ../sass/components/_featured-articles.scss */
       .l-featured .l-region--feature-forth {
         -sgs-span-settings: ("span": 1, "location": 2, "grid": 2, "gutter": 0.025, "style": "split", "start row": false, "end row": true, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
         width: 48.78049%;
@@ -2695,7 +2691,7 @@ img, media {
     /* line 8, ../sass/components/_featured-articles.scss */
     .l-featured {
       background-image: linear-gradient(to right, #ffeac7, #ffeac7 0.30488%, Moccasin 0.30488%, Moccasin 24.69512%, #ffeac7 24.69512%, #ffeac7 25.30488%, Moccasin 25.30488%, Moccasin 49.69512%, #ffeac7 49.69512%, #ffeac7 50.30488%, Moccasin 50.30488%, Moccasin 74.69512%, #ffeac7 74.69512%, #ffeac7 75.30488%, Moccasin 75.30488%, Moccasin 99.69512%, #ffeac7 99.69512%, #ffeac7 100.0%); }
-      /* line 79, ../sass/components/_featured-articles.scss */
+      /* line 80, ../sass/components/_featured-articles.scss */
       .l-featured .l-region--feature-first {
         -sgs-span-settings: ("span": 1, "location": 1, "grid": 4, "gutter": 0.025, "style": "split", "start row": true, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
         width: 24.39024%;
@@ -2704,7 +2700,7 @@ img, media {
         margin-left: 0.30488%;
         clear: none;
         background-image: linear-gradient(to right, #3f9f9f, #3f9f9f 0.30488%, Teal 0.30488%, Teal 24.69512%, #3f9f9f 24.69512%, #3f9f9f 25.30488%, Teal 25.30488%, Teal 49.69512%, #3f9f9f 49.69512%, #3f9f9f 50.30488%, Teal 50.30488%, Teal 74.69512%, #3f9f9f 74.69512%, #3f9f9f 75.30488%, Teal 75.30488%, Teal 99.69512%, #3f9f9f 99.69512%, #3f9f9f 100.0%); }
-      /* line 83, ../sass/components/_featured-articles.scss */
+      /* line 84, ../sass/components/_featured-articles.scss */
       .l-featured .l-region--feature-second {
         -sgs-span-settings: ("span": 1, "location": 2, "grid": 4, "gutter": 0.025, "style": "split", "start row": false, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
         width: 24.39024%;
@@ -2713,7 +2709,7 @@ img, media {
         margin-left: 25.30488%;
         clear: none;
         background-image: linear-gradient(to right, #bb5f5f, #bb5f5f 0.30488%, Brown 0.30488%, Brown 24.69512%, #bb5f5f 24.69512%, #bb5f5f 25.30488%, Brown 25.30488%, Brown 49.69512%, #bb5f5f 49.69512%, #bb5f5f 50.30488%, Brown 50.30488%, Brown 74.69512%, #bb5f5f 74.69512%, #bb5f5f 75.30488%, Brown 75.30488%, Brown 99.69512%, #bb5f5f 99.69512%, #bb5f5f 100.0%); }
-      /* line 87, ../sass/components/_featured-articles.scss */
+      /* line 88, ../sass/components/_featured-articles.scss */
       .l-featured .l-region--feature-third {
         -sgs-span-settings: ("span": 1, "location": 3, "grid": 4, "gutter": 0.025, "style": "split", "start row": false, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
         width: 24.39024%;
@@ -2722,7 +2718,7 @@ img, media {
         margin-left: 50.30488%;
         clear: none;
         background-image: linear-gradient(to right, #8e8e8e, #8e8e8e 0.30488%, DimGray 0.30488%, DimGray 24.69512%, #8e8e8e 24.69512%, #8e8e8e 25.30488%, DimGray 25.30488%, DimGray 49.69512%, #8e8e8e 49.69512%, #8e8e8e 50.30488%, DimGray 50.30488%, DimGray 74.69512%, #8e8e8e 74.69512%, #8e8e8e 75.30488%, DimGray 75.30488%, DimGray 99.69512%, #8e8e8e 99.69512%, #8e8e8e 100.0%); }
-      /* line 91, ../sass/components/_featured-articles.scss */
+      /* line 92, ../sass/components/_featured-articles.scss */
       .l-featured .l-region--feature-forth {
         -sgs-span-settings: ("span": 1, "location": 4, "grid": 4, "gutter": 0.025, "style": "split", "start row": false, "end row": true, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
         width: 24.39024%;
@@ -2738,42 +2734,40 @@ img, media {
  * navigation and the featured article content regions.
  ******************************************************************************/
 /* line 8, ../sass/components/_featured-gallery.scss */
-.box {
-  width: 20%;
-  padding-bottom: 20%;
-  position: relative;
-  float: left; }
+.l-gallery .flexslider {
+  max-width: 75%;
+  margin: 10px auto; }
+  @media (min-width: 0px) {
+    /* line 8, ../sass/components/_featured-gallery.scss */
+    .l-gallery .flexslider {
+      max-width: 75%;
+      margin: 10px auto; } }
+  @media (min-width: 321px) {
+    /* line 8, ../sass/components/_featured-gallery.scss */
+    .l-gallery .flexslider {
+      max-width: 75%;
+      margin: 10px auto; } }
+  @media (min-width: 481px) {
+    /* line 8, ../sass/components/_featured-gallery.scss */
+    .l-gallery .flexslider {
+      max-width: 80%;
+      margin: 10px auto; } }
+  @media (min-width: 701px) {
+    /* line 8, ../sass/components/_featured-gallery.scss */
+    .l-gallery .flexslider {
+      max-width: 80%;
+      margin: 10px auto; } }
+  @media (min-width: 1051px) {
+    /* line 8, ../sass/components/_featured-gallery.scss */
+    .l-gallery .flexslider {
+      max-width: 830px;
+      margin: 10px auto; } }
+  @media (min-width: 1600px) {
+    /* line 8, ../sass/components/_featured-gallery.scss */
+    .l-gallery .flexslider {
+      max-width: 830px;
+      margin: 10px auto; } }
 
-@media (min-width: 0px) and (max-width: 320px) {
-  /* line 15, ../sass/components/_featured-gallery.scss */
-  .box {
-    width: 100%;
-    padding-bottom: 100%; } }
-@media (min-width: 321px) and (max-width: 480px) {
-  /* line 21, ../sass/components/_featured-gallery.scss */
-  .box {
-    width: 50%;
-    padding-bottom: 50%; } }
-@media (min-width: 481px) and (max-width: 700px) {
-  /* line 27, ../sass/components/_featured-gallery.scss */
-  .box {
-    width: 33.333%;
-    padding-bottom: 33.333%; } }
-@media (min-width: 701px) and (max-width: 1050px) {
-  /* line 33, ../sass/components/_featured-gallery.scss */
-  .box {
-    width: 25%;
-    padding-bottom: 25%; } }
-@media (min-width: 1051px) and (max-width: 1250px) {
-  /* line 39, ../sass/components/_featured-gallery.scss */
-  .box {
-    width: 20%;
-    padding-bottom: 20%; } }
-@media (min-width: 1251px) {
-  /* line 45, ../sass/components/_featured-gallery.scss */
-  .box {
-    width: 16.666%;
-    padding-bottom: 16.666%; } }
 /* line 4, ../sass/components/_menus.scss */
 #block-menu-menu-abwa-primary .menu {
   width: 100%;
